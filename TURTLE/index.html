@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cel.Lep Turtle</title>
+
+    <link rel="stylesheet" type="text/css" href="app/style.css">
+  </head>
+
+  <body>
+    <header class="header-container">
+      <img src="app/assets/logo_cellep.png" alt="Logo Cel.Lep">
+      <button id="btn-ajuda">Ajuda ▲</button>
+    </header>
+
+    <div id="ajuda-container" style="display: none">
+      <h1>TURTLE COMANDOS</h1>
+
+      <h2>makeTurtle(x, y)</h2>
+      <p>Cria uma nova tartaruga na posição x/y</p>
+
+      <h2>penDown()</h2>
+      <p>Levanta a caneta</p>
+
+      <h2>penUp()</h2>
+      <p>Abaixa a caneta</p>
+
+      <h2>setWeight(weight)</h2>
+      <p>Muda a espessura da caneta</p>
+
+      <h2>setColor(color)</h2>
+      <p>Muda a cor da caneta. 
+      Aceita nomes de cores em inglês 'blue' ou código hexadecimal '#FF00FF'</p>
+
+      <h2>forward(distance)</h2>
+      <p>Move para frente determinados pixels</p>
+
+      <h2>backward(distance)</h2>
+      <p>Move para trás determinados pixels</p>
+
+      <h2>goto(x, y)</h2>
+      <p>Move para posição x/y</p>
+
+      <h2>face(degrees)</h2>
+      <p>Aponta para determinado grau: direita = 0, baixo = 90, esquerda = 180, cima = 270</p>
+
+      <h2>right(degrees)</h2>
+      <p>Gira para direita determinados graus</p>
+
+      <h2>left(degrees)</h2>
+      <p>Girar para esquerda determinados graus</p>
+    </div>
+    <script src="app/libraries/p5.min.js"></script>
+    <script src="app/libraries/p5.sound.min.js"></script>
+    <script src="app/libraries/turtle.js"></script>
+    <script src="sketch.js"></script>
+    <script src="app/script.js"></script>
+  </body>
+</html>
