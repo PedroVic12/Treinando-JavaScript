@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <script>
+            //QUESTAO 6
+            function verifica(){
+
+                var num = document.getElementById("numero").value
+
+                var int_num = Number(num);
+
+                if (int_num%2 == 0){
+                    alert("Este numero é par")
+                }
+
+                    else{
+                        alert("Este numero é impar")
+                    }                   
+            }
+
+            //QUESTAO 7
+            function idade(){
+
+                var num = document.getElementById("numero1").value
+
+                var int_num = Number(num)
+
+                if (int_num >= 18){
+                    
+                    alert("Voce é maior de idade")
+                }
+                    else{
+                        alert("Voce é menor de idade")
+                    }
+            }
+
+            //QUESTAO 10
+
+            function divisivel(){
+                
+                var num = document.getElementById("numero2").value
+
+                var int_num = Number(num)
+
+                if (int_num%3 == 0 ){
+                    alert(" FIZZ NUMERO DIVISIVEL POR 3")
+                }
+
+                    if (int_num%5 == 0){
+                        alert(" BUZZ NUMERO DIVISIVEL POR 5")
+                    }
+                    
+                    if(int_num%3 == 0 && int_num%5 == 0 ){
+                        alert(" FIZZBUZZ NUMERO DIVISIVEL POR 3 e 5")
+                    }
+
+                    if(int_num%3 > 1 && int_num%5 > 1 );{
+
+                        alert("Esse valor nao é divisivel nem por 3 e nem por 5, tente outro")
+                    }
+
+            }
+            
+
+
+
+
+
+
+
+        </script>
+
+
+</head>
+<body>
+    
+    <!--QUESTAO 6 -->
+     <input type="text" id="numero">
+         <button onclick="verifica()"> verifica </button>
+         <br>
+         <br>
+
+<!--QUESTAO 7 -->
+        <input type="text" id="numero1">
+            <button onclick="idade()"> Qual sua idade? </button>
+            <br>
+            <br>
+            <br>
+
+
+            <!--QUESTAO 10 -->
+
+            <input type="text" id="numero2">
+            <button onclick="divisivel()"> Digite um numero </button>
+
+
+
+
+</body>
+</html>
